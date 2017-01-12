@@ -6,12 +6,16 @@ class Complement
       case dna[i]
         when 'A'
           rna = rna + 'U'
+          next
         when 'G'
           rna = rna + 'C'
+          next
         when 'C'
           rna = rna + 'G'
+          next
         when 'T'
           rna = rna + 'A'
+          next
         else
           rna = ''
           break
