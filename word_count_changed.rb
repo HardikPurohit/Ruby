@@ -2,7 +2,6 @@ class Phrase
 
   def initialize(phrase)
     @phrase_to_count=phrase
-
   end
 
   def word_count
@@ -25,7 +24,6 @@ class Phrase
     end
     return phrase
   end
-
 end
 
 module BookKeeping
