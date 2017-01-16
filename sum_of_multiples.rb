@@ -12,9 +12,7 @@ class SumOfMultiples
         j = 1
         while (@array_of_numbers[i] * j) < multiple_limit
           a = @array_of_numbers[i] * j
-          if !@result_array.include?(a)
-            @result_array.push(a)
-          end
+          @result_array.push(a) if !@result_array.include?(a)
           j += 1
         end
       else
