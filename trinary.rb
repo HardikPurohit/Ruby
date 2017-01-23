@@ -8,9 +8,7 @@ class Trinary
     temp_loop = @number
     while temp_loop > 0
       digit_chunk = temp_loop % 10
-      if digit_chunk < 4
-        result += digit_chunk * (3 ** count)
-      end
+      result += digit_chunk * (3 ** count) if digit_chunk < 4
       count += 1
       temp_loop = temp_loop / 10
     end
